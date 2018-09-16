@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pekerjaan = 'nganggur'
+        pekerjaan = prompt('apa profesi anda')
+        switch (pekerjaan) {
+            case "guru":
+                console.log('pekerjaanya mengajar');
+                break;
+            case 'supir':
+                console.log('pekerjaanya nyetir');
+                break;
+            case 'polisi':
+                console.log('pekerjaannya nilang');
+                break;
+            default:
+                console.log('ada aja kerjaannya')
+                break;
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let berat = prompt ("masukan berat banda anda (kg):")
+        let tinggi = prompt ('masukan tinggi badan anda (m)')
+        let  imt = berat / tinggi ** 2
+let result;
+
+if (imt < 18.5 ){
+    result = 'berat badan anda kurang ideal'
+} else if (imt  < 25) {
+    result = 'berat badan anda ideal'
+} else if (imt  < 30) {
+    result = 'berat badan anda berlibih'
+} else if (imt < 40) {
+    result = "berat badan anda sangat berlebih"
+} else if (imt >= 40) {
+    result = "anda obesitas"
+}
+
+alert(imt + " " + result)
+    </script>
+</body>
+</html>
